@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Shortcuts</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Url</th>
+      <th>Target</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @shortcuts.each do |shortcut| %>
+      <tr>
+        <td><%= shortcut.url %></td>
+        <td><%= shortcut.target %></td>
+        <td><%= link_to 'Show', shortcut %></td>
+        <td><%= link_to 'Edit', edit_shortcut_path(shortcut) %></td>
+        <td><%= link_to 'Destroy', shortcut, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Shortcut', new_shortcut_path %>

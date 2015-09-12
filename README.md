@@ -22,7 +22,7 @@ Requires Ruby 2.2.
     rake db:migrate
     rails server
 
-A web portal will then be available at http://localhost/shortcuts
+A web portal will then be available at http://localhost:3000/shortcuts
 
 ## Using the API
 ### Creating a shortcut
@@ -35,3 +35,6 @@ A web portal will then be available at http://localhost/shortcuts
     > curl http://localhost:3000/shortcuts/bkdwh5.json
     {"id":5,"url":"http123","target":"bkdwh5","created_at":"2015-09-12T01:32:07.537Z","updated_at":"2015-09-12T01:32:07.537Z"}
 
+### Resolving a shortcut
+
+Under construction. Going to http://localhost:3000/bkdwh5 should redirect to http://github.com.

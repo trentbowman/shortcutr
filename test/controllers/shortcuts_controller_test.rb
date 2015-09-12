@@ -46,6 +46,7 @@ class ShortcutsControllerTest < ActionController::TestCase
     json = JSON.parse(@response.body)
     assert_equal @shortcut.url, json['url']
     assert_equal @shortcut.target, json['target']
+    assert_equal @shortcut.short_url, json['short_url']
   end
 
   test "should normalize target for show" do

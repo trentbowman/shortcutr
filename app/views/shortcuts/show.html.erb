@@ -10,5 +10,10 @@
   <%= @shortcut.target %>
 </p>
 
+<p>
+  <strong>Short URL:</strong>
+  <%= @shortcut.short_url %>
+</p>
+
 <%= link_to 'Edit', edit_shortcut_path(@shortcut) %> |
 <%= link_to 'Back', shortcuts_path %>

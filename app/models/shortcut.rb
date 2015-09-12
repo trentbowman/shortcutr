@@ -56,6 +56,10 @@ class Shortcut < ActiveRecord::Base
 		end				
 	end
 
+	def short_url
+		Rails.application.routes.url_helpers.api_url(target)
+	end
+
 	# TODO: move these to lib
 
 	# Produces a random 6-digit string containing only canonical digits

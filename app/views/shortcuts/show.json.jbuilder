@@ -1,1 +1,1 @@
-json.extract! @shortcut, :id, :url, :target, :created_at, :updated_at
+json.extract! @shortcut, :id, :url, :short_url, :target, :created_at, :updated_at

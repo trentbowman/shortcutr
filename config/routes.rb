@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
   resources :shortcuts, param: :target
+
+  get ':target', to: 'api#show', as: 'api'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
